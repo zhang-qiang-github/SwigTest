@@ -1,0 +1,14 @@
+
+set(SUBPROJECT_NAME PackATest)
+
+file(GLOB SOURCES "*.cpp" "*.c" "*.hpp")
+file(GLOB HEADERS "*.h")
+
+add_executable(PackATest ${SOURCES} ${HEADERS})
+
+SET_TARGET_PROPERTIES(PackATest
+PROPERTIES
+RUNTIME_OUTPUT_DIRECTORY ${Bin_Root}
+)
+
+TARGET_LINK_LIBRARIES(PackATest PackA)
