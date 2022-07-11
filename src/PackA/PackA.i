@@ -5,4 +5,5 @@
 #include "PackA.h"
 %}
 %include <windows.i>
+%include "PackAGlobal.h"
 %include "PackA.h"

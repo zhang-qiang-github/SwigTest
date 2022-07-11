@@ -19,3 +19,7 @@ set_property(SOURCE PackA.i PROPERTY CPLUSPLUS ON)
 swig_add_library(PackAWrapping 
                 LANGUAGE python 
                 SOURCES PackA.i PackA.cpp)
+SET_TARGET_PROPERTIES(PackAWrapping
+	PROPERTIES
+	COMPILE_DEFINITIONS PackA_EXPORTS
+)
